@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./contentyoutube.component.css']
 })
 export class ContentyoutubeComponent {
-   username ="vishal"
+   username :string ="vishal"
+
+   userlist =[];
+
+   onclickfn(user:any){
+    this.userlist.push()
+
+   }
 }
