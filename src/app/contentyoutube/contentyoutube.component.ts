@@ -1,3 +1,4 @@
+import { compileNgModule } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,12 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./contentyoutube.component.css']
 })
 export class ContentyoutubeComponent {
-   username :string ="vishal"
+   username :string ="Enter Username"
 
-   userlist =[];
+   userlist :any =[];
 
    onclickfn(user:any){
-    this.userlist.push()
+    if(user.value.length>0 && user.value != ' '){
+      this.userlist.push(user.value);
+      user.value=' ';
+    }
+    else{
+      window.alert("Please Enter Userdetails")
+    }
+   
+  }
+  removefn(index:any){
+    this.userlist.splice(index,1)
 
-   }
+  }
+  
 }

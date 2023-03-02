@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent {
+  topic = "DataBinding"
+  name:string="old server";
+  serverstatus = false
+  randomserver:any = ' ';
+  sname(){
+    return this.name;
+  }
+  changefn(){
+    this.name = "new server"
+  }
+  onupdateserver(event:any){
+    this.randomserver = event.target.value;
+  }
+
+
 
 }

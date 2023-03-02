@@ -1,14 +1,34 @@
-<div class="container mt-6">
+<div class="container mt-5">
     <div class="row">
-        
+      <h4>Some Array Concepts</h4>
         <div class="col-md-10">
-            <input type="text" class="form-control" [placeholder]="username" #newuser >
+            <input type="text" #userbox class="form-control" [placeholder]="username"  >
+            <table class="table table-dark table-striped mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Actions</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of userlist;index as number">
+                    <th scope="row">{{number+1}}</th>
+                    <td>{{item}}</td>
+                    <td><button type="button" class="btn btn-outline-danger btn-sm" (click)="removefn(number)">Remove</button></td>
+                   
+                  </tr>
+                 
+                </tbody>
+              </table>
     
         </div>
         <div class="col-md-2">
             
-            <button type="button" class="btn btn-dark" (click)="onclickfn(newuser.value)">AddUser</button>
+            <button type="button" class="btn btn-outline-success" (click)="onclickfn(userbox) ">AddUser</button>
         </div>
+        
     </div>
 
 
