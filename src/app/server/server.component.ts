@@ -10,6 +10,7 @@ export class ServerComponent {
   name:string="old server";
   serverstatus = false
   randomserver:any = ' ';
+  user:string ="new user";
   sname(){
     return this.name;
   }
