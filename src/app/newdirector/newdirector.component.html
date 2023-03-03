@@ -1,13 +1,15 @@
 <h3>Directives</h3>
 <div class="container mt-5 border border-secondary">
     <div class="row">
-        <div class="col-md-8">
-                
+        <div class="col-md-8 pt-2">
+        <input type="text"#server class="form-control" placeholder="Servername">
+        <br>
+        <p *ngIf="status">{{sname}}</p>
+    
         </div>
-        <div class="col-md-4">
-            <p>Structural directives</p>
-            <hr>
-            <p>Attributes directives</p>
+        <div class="col-md-4 pt-2">
+            <button type="button" class="btn btn-success" (click)="onaddserver(server)">Add server</button>
+            
         </div>
     </div>
 

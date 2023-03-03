@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./newdirector.component.css']
 })
 export class NewdirectorComponent {
+  status:boolean =false;
+
+  sname :string = "Name"
+
+  onaddserver(server:any){
+    this.sname = server.value;
+    this.status=true;
+
+  }
 
 }
