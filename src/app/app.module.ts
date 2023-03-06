@@ -16,6 +16,7 @@ import { RecipeItemsComponent } from './udthree/recipes/recipes-list/recipe-item
 import { ShoppinglistComponent } from './udthree/shoppinglist/shoppinglist.component';
 import { ShoppingEditComponent } from './udthree/shoppinglist/shopping-edit/shopping-edit.component';
 import { UdheaderComponent } from './udthree/udheader/udheader.component';
+import { UdfiveComponent } from './udfive/udfive.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { UdheaderComponent } from './udthree/udheader/udheader.component';
     RecipeItemsComponent,
     ShoppinglistComponent,
     ShoppingEditComponent,
-    UdheaderComponent
+    UdheaderComponent,
+    UdfiveComponent
   ],
   imports: [
     BrowserModule,
