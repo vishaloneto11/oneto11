@@ -1,23 +1,12 @@
 <div class="container">
+  <app-cockpit></app-cockpit>
+  <hr />
   <div class="row">
-    <div class="col-md-8">
-      <p>Add new server or blueprints</p>
-
-      <input type="text" class="form-control" placeholder="Server name" />
-      <br />
-      <input type="text" class="form-control" placeholder="Server content" />
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-5">
-            <button type="button" class="btn btn-primary">Add server</button>
-          </div>
-          <div class="col-md-5">
-            <button type="button" class="btn btn-dark">
-              Add server Blueprint
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="col-xs-12">
+      <app-server-element
+        *ngFor="let serverElements of serverElements"
+        [srvElement]="serverElements"
+      ></app-server-element>
     </div>
   </div>
 </div>

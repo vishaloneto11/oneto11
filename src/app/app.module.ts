@@ -17,6 +17,8 @@ import { ShoppinglistComponent } from './udthree/shoppinglist/shoppinglist.compo
 import { ShoppingEditComponent } from './udthree/shoppinglist/shopping-edit/shopping-edit.component';
 import { UdheaderComponent } from './udthree/udheader/udheader.component';
 import { UdfiveComponent } from './udfive/udfive.component';
+import { CockpitComponent } from './udfive/cockpit/cockpit.component';
+import { ServerElementComponent } from './udfive/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { UdfiveComponent } from './udfive/udfive.component';
     ShoppinglistComponent,
     ShoppingEditComponent,
     UdheaderComponent,
-    UdfiveComponent
+    UdfiveComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
