@@ -19,6 +19,9 @@ import { UdheaderComponent } from './udthree/udheader/udheader.component';
 import { UdfiveComponent } from './udfive/udfive.component';
 import { CockpitComponent } from './udfive/cockpit/cockpit.component';
 import { ServerElementComponent } from './udfive/server-element/server-element.component';
+import { TestComponent } from './test/test.component';
+import { TestchildComponent } from './test/testchild/testchild.component';
+import { ConceptarComponent } from './conceptar/conceptar.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { ServerElementComponent } from './udfive/server-element/server-element.c
     UdheaderComponent,
     UdfiveComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    TestComponent,
+    TestchildComponent,
+    ConceptarComponent
   ],
   imports: [
     BrowserModule,
